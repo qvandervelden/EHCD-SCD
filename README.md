@@ -26,17 +26,17 @@ The other files (starting with "HC") are meants as examples of how one may use t
 
 EHCD.py contains the following functions which one may use in their own code
  * coupling(spins): for determining all the ways of coupling a set of spins
-  * Takes as input:
-   * spins: a 1D Numpy array of positive half-integers which represents spins
-  * Returns an array with all ways of coupling the given spins
+    * Takes as input:
+      * spins: a 1D Numpy array of positive half-integers which represents spins
+    * Returns an array with all ways of coupling the given spins
  * mat_t(J, i, j, spins, coup): for determining reduced matrix elements of a term S_i * S_j for i not equal to j
-  * Takes as input
-   * J: a Numpy array which represents the coupling matrix
-   * spins: a 1D Numpy array of positive half-integers which represents spins
-   * coup: a 2D numpy array with all the ways of coupling the spins. This type of input is returned by the coupling functions
-   * i: index of a spin
-   * j: index of a spin
-  * Returns a 2D Numpy array with the reduced matrix element of S_i * S_j for the interactions between the subsystems in the direct sum decomposition that are given by the coupling sequences from coup multiplied by sqrt((2S^tot_i + 1)).
+    * Takes as input
+      * J: a Numpy array which represents the coupling matrix
+      * spins: a 1D Numpy array of positive half-integers which represents spins
+      * coup: a 2D numpy array with all the ways of coupling the spins. This type of input is returned by the coupling functions
+      * i: index of a spin
+      * j: index of a spin
+    * Returns a 2D Numpy array with the reduced matrix element of S_i * S_j for the interactions between the subsystems in the direct sum decomposition that are given by the coupling sequences from coup multiplied by sqrt((2S^tot_i + 1)).
  * block(spins, J, coupling, S): #computes the diagonal block of the Heisenberg Chain corresponding to spin S
   * Takes as input:
    * spins: a 1D Numpy array of positive half-integers which represents spins
