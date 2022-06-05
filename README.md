@@ -43,3 +43,4 @@ EHCD.py contains the following functions which one may use in their own code
      * coupling: a 2D numpy array with all the ways of coupling the spins. This type of input is returned by the coupling functions
      * J: a Numpy array which represents the coupling matrix
      * S: a half integer representating a spin
+   * Returns a 2D numpy array with all the reduced matrix 
