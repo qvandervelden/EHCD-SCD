@@ -1,3 +1,21 @@
+"""
+HC-Line: Heisenberg Chain Line
+Copyright (C) 2022 Quinn van der Velden
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+"""
+
 import numpy as np
 import numpy.linalg as lin
 import time
@@ -15,7 +33,7 @@ if __name__ ==  '__main__':
     N = 2 #The number of particles
     J_s = 1 #The coupling between neighbouring particles
     
-    spins = EHCD.unispin(S, N) #The set of spins
+    spins = np.full((N),S) #The set of spins
     J = EHCD.uniline(N, J_s) #The coupling matrix
     
     print(J)
