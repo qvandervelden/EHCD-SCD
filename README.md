@@ -63,4 +63,4 @@ SCD.py contains the following functions which one may want to use in their own c
   * reduction: Prints information about the decomposition of of a system of coupled spins
     * Takes as input:
      * 1D Numpy array with half integers representing the spins of particles
-   * Does not return anything
+    * Does not return anything
