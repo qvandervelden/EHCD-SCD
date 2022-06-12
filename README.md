@@ -62,5 +62,5 @@ SCD.py contains the following functions which one may want to use in their own c
    * Returns a 2D array with two collumns. the first collumns represents the multiplicity and the second the spin
   * reduction: Prints information about the decomposition of of a system of coupled spins
     * Takes as input:
-     * 1D Numpy array with half integers representing the spins of particles
+      * 1D Numpy array with half integers representing the spins of particles
     * Does not return anything
